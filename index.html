@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hoja de Vida - Wilber Wesley Galván Blanco</title>
+    <title>Hoja de Vida - Wilber Wesley</title>
 
     <style>
 
@@ -18,7 +18,8 @@
 
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #f2f2f2;
+            background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+            color: white;
         }
 
         /* MENÚ */
@@ -29,11 +30,11 @@
 
             justify-content: center;
 
-            gap: 20px;
-
-            background-color: #111;
+            gap: 30px;
 
             padding: 20px;
+
+            background-color: rgba(0,0,0,0.5);
         }
 
         .menu a{
@@ -41,6 +42,8 @@
             color: white;
 
             text-decoration: none;
+
+            font-size: 18px;
 
             transition: 0.3s;
         }
@@ -52,54 +55,99 @@
 
         /* PRESENTACIÓN */
 
-        .presentacion{
+        .perfil{
 
             text-align: center;
 
-            padding: 40px;
+            padding: 50px 20px;
         }
 
-        .presentacion img{
+        .perfil img{
 
-            width: 180px;
+            width: 220px;
 
-            height: 180px;
+            height: 220px;
 
             border-radius: 50%;
 
             object-fit: cover;
 
+            border: 5px solid cyan;
+
             margin-bottom: 20px;
-
-            border: 5px solid #0077ff;
         }
 
-        .presentacion h1{
+        .perfil h1{
 
-            color: #222;
+            font-size: 40px;
 
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
-        .presentacion p{
+        .perfil p{
+
+            max-width: 800px;
+
+            margin: auto;
 
             font-size: 18px;
 
-            margin-bottom: 15px;
-
-            color: #333;
+            line-height: 1.8;
         }
 
-        .instagram{
+        /* BOTONES */
 
-            color: #e1306c;
+        .botones{
 
-            font-weight: bold;
+            margin-top: 30px;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
         }
 
-        /* GRID */
+        .botones a{
 
-        .galeria{
+            text-decoration: none;
+
+            color: white;
+
+            background-color: #0077ff;
+
+            padding: 15px 25px;
+
+            border-radius: 10px;
+
+            transition: 0.3s;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+        }
+
+        .botones a:hover{
+
+            background-color: green;
+
+            transform: scale(1.05);
+        }
+
+        .botones img{
+
+            width: 30px;
+
+            height: 30px;
+        }
+
+        /* TARJETAS */
+
+        .contenedor{
 
             display: grid;
 
@@ -107,28 +155,30 @@
 
             gap: 20px;
 
-            padding: 30px;
+            padding: 40px;
         }
 
-        .caja{
+        .card{
 
             background-color: white;
+
+            color: black;
 
             border-radius: 15px;
 
             overflow: hidden;
 
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
 
             transition: 0.3s;
         }
 
-        .caja:hover{
+        .card:hover{
 
-            transform: scale(1.03);
+            transform: translateY(-10px);
         }
 
-        .caja img{
+        .card img{
 
             width: 100%;
 
@@ -144,30 +194,30 @@
 
         .contenido h2{
 
-            color: #0077ff;
-
             margin-bottom: 10px;
+
+            color: #0077ff;
         }
 
         .contenido p{
 
-            color: #333;
+            line-height: 1.5;
         }
 
         /* RESPONSIVE */
 
-        @media(max-width:700px){
+        @media(max-width:900px){
+
+            .contenedor{
+
+                grid-template-columns: 1fr;
+            }
 
             .menu{
 
                 flex-direction: column;
 
                 align-items: center;
-            }
-
-            .galeria{
-
-                grid-template-columns: 1fr;
             }
 
         }
@@ -180,65 +230,81 @@
 
     <!-- MENÚ -->
 
-    <header>
+    <nav class="menu">
 
-        <nav class="menu">
+        <a href="#">Inicio</a>
 
-            <a href="#">Inicio</a>
+        <a href="#">Estudios</a>
 
-            <a href="#">Estudios</a>
+        <a href="#">Hobbies</a>
 
-            <a href="#">Hobbies</a>
+        <a href="#">Contacto</a>
 
-            <a href="#">Contacto</a>
-
-        </nav>
-
-    </header>
+    </nav>
 
 
-    <!-- PRESENTACIÓN -->
+    <!-- PERFIL -->
 
-    <section class="presentacion">
+    <section class="perfil">
+
+        <!-- TU FOTO -->
 
         <img src="WhatsApp Image 2026-05-22 at 10.20.22 AM.jpeg">
 
-<h1>WILBER WESLEY GALVÁN BLANCO</h1>
+        <h1>WILBER WESLEY GALVÁN BLANCO</h1>
 
         <p>
 
             Tengo 18 años y actualmente estudio Ingeniería de Sistemas
             en la Universidad Francisco de Paula Santander Ocaña.
-            Me gusta mucho mi carrera porque me apasiona la tecnología
-            y el desarrollo de software.
-
-        </p>
-
-        <p>
+            También tengo un Técnico Ambiental realizado en el SENA.
 
             Soy una persona con muchos sueños, metas y aspiraciones.
-            Tengo muchas ganas de salir adelante y convertirme en un gran profesional.
+            Me apasiona la tecnología, el deporte, la música
+            y las actividades recreativas. Tengo muchas ganas
+            de salir adelante y convertirme en un gran profesional.
 
         </p>
 
-        <p class="instagram">
 
-            Instagram: @WILBERG59
+        <!-- BOTONES -->
 
-        </p>
+        <div class="botones">
+
+            <!-- TELÉFONO -->
+
+            <a href="tel:3143064701">
+
+                📞 3143064701
+
+            </a>
+
+
+            <!-- INSTAGRAM -->
+
+            <a href="https://instagram.com/wilberg59" target="_blank">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+
+                @WILBERG59
+
+            </a>
+
+        </div>
 
     </section>
 
 
-    <!-- GALERÍA -->
+    <!-- TARJETAS -->
 
-    <section class="galeria">
+    <section class="contenedor">
 
-        <!-- UNIVERSIDAD -->
 
-        <div class="caja">
+        <!-- SISTEMAS -->
 
-            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
 
             <div class="contenido">
 
@@ -246,9 +312,32 @@
 
                 <p>
 
-                    Actualmente estudio Ingeniería de Sistemas
-                    y me esfuerzo cada día por aprender más sobre
-                    programación, tecnología y desarrollo web.
+                    Actualmente estudio Ingeniería de Sistemas,
+                    una carrera que me apasiona porque me gusta
+                    la programación, la tecnología y el desarrollo web.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SENA -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1">
+
+            <div class="contenido">
+
+                <h2>Técnico Ambiental</h2>
+
+                <p>
+
+                    Realicé un Técnico Ambiental en el SENA,
+                    donde aprendí sobre cuidado ambiental
+                    y sostenibilidad.
 
                 </p>
 
@@ -259,7 +348,7 @@
 
         <!-- FÚTBOL -->
 
-        <div class="caja">
+        <div class="card">
 
             <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018">
 
@@ -269,9 +358,8 @@
 
                 <p>
 
-                    Me gusta mucho el fútbol porque es un deporte
-                    que ayuda a mantener la disciplina, el trabajo
-                    en equipo y la salud física.
+                    El fútbol es uno de mis deportes favoritos.
+                    Me gusta compartir y competir sanamente.
 
                 </p>
 
@@ -282,7 +370,7 @@
 
         <!-- MÚSICA -->
 
-        <div class="caja">
+        <div class="card">
 
             <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
 
@@ -292,9 +380,8 @@
 
                 <p>
 
-                    Disfruto escuchar música en mis tiempos libres
-                    porque me ayuda a relajarme y motivarme
-                    en mis actividades diarias.
+                    Disfruto escuchar música porque me ayuda
+                    a relajarme y motivarme diariamente.
 
                 </p>
 
@@ -303,43 +390,20 @@
         </div>
 
 
-        <!-- TECNOLOGÍA -->
+        <!-- DEPORTE -->
 
-        <div class="caja">
+        <div class="card">
 
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
-
-            <div class="contenido">
-
-                <h2>Tecnología</h2>
-
-                <p>
-
-                    Me apasiona la tecnología y el aprendizaje
-                    sobre computadoras, programación y desarrollo
-                    de aplicaciones modernas.
-
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- ACTIVIDADES -->
-
-        <div class="caja">
-
-            <img src="https://images.unsplash.com/photo-1517164850305-99a3e65bb47e">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
 
             <div class="contenido">
 
-                <h2>Actividades Lúdicas</h2>
+                <h2>Deporte</h2>
 
                 <p>
 
-                    Me gusta participar en actividades recreativas
-                    y compartir momentos agradables con otras personas.
+                    Practicar deporte me ayuda a mantenerme
+                    enfocado, saludable y disciplinado.
 
                 </p>
 
@@ -350,7 +414,7 @@
 
         <!-- SUEÑOS -->
 
-        <div class="caja">
+        <div class="card">
 
             <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
 
@@ -360,9 +424,9 @@
 
                 <p>
 
-                    Tengo muchos sueños y aspiraciones para mi futuro.
-                    Quiero salir adelante y lograr grandes cosas
-                    a nivel personal y profesional.
+                    Tengo grandes metas y aspiraciones.
+                    Quiero salir adelante y cumplir
+                    todos mis sueños personales y profesionales.
 
                 </p>
 
