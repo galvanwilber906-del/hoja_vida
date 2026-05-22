@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hoja de Vida - Wilber Wesley Galván Blanco</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* MENÚ */
+
+        .menu{
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            background-color: #111;
+
+            padding: 20px;
+        }
+
+        .menu a{
+
+            color: white;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        .menu a:hover{
+
+            color: cyan;
+        }
+
+        /* PRESENTACIÓN */
+
+        .presentacion{
+
+            text-align: center;
+
+            padding: 40px;
+        }
+
+        .presentacion img{
+
+            width: 180px;
+
+            height: 180px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            margin-bottom: 20px;
+
+            border: 5px solid #0077ff;
+        }
+
+        .presentacion h1{
+
+            color: #222;
+
+            margin-bottom: 15px;
+        }
+
+        .presentacion p{
+
+            font-size: 18px;
+
+            margin-bottom: 15px;
+
+            color: #333;
+        }
+
+        .instagram{
+
+            color: #e1306c;
+
+            font-weight: bold;
+        }
+
+        /* GRID */
+
+        .galeria{
+
+            display: grid;
+
+            grid-template-columns: repeat(3,1fr);
+
+            gap: 20px;
+
+            padding: 30px;
+        }
+
+        .caja{
+
+            background-color: white;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+
+            transition: 0.3s;
+        }
+
+        .caja:hover{
+
+            transform: scale(1.03);
+        }
+
+        .caja img{
+
+            width: 100%;
+
+            height: 220px;
+
+            object-fit: cover;
+        }
+
+        .contenido{
+
+            padding: 20px;
+        }
+
+        .contenido h2{
+
+            color: #0077ff;
+
+            margin-bottom: 10px;
+        }
+
+        .contenido p{
+
+            color: #333;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:700px){
+
+            .menu{
+
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+            .galeria{
+
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- MENÚ -->
+
+    <header>
+
+        <nav class="menu">
+
+            <a href="#">Inicio</a>
+
+            <a href="#">Estudios</a>
+
+            <a href="#">Hobbies</a>
+
+            <a href="#">Contacto</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- PRESENTACIÓN -->
+
+    <section class="presentacion">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+        <h1>WILBER WESLEY GALVÁN BLANCO</h1>
+
+        <p>
+
+            Tengo 18 años y actualmente estudio Ingeniería de Sistemas
+            en la Universidad Francisco de Paula Santander Ocaña.
+            Me gusta mucho mi carrera porque me apasiona la tecnología
+            y el desarrollo de software.
+
+        </p>
+
+        <p>
+
+            Soy una persona con muchos sueños, metas y aspiraciones.
+            Tengo muchas ganas de salir adelante y convertirme en un gran profesional.
+
+        </p>
+
+        <p class="instagram">
+
+            Instagram: @WILBERG59
+
+        </p>
+
+    </section>
+
+
+    <!-- GALERÍA -->
+
+    <section class="galeria">
+
+        <!-- UNIVERSIDAD -->
+
+        <div class="caja">
+
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+
+            <div class="contenido">
+
+                <h2>Ingeniería de Sistemas</h2>
+
+                <p>
+
+                    Actualmente estudio Ingeniería de Sistemas
+                    y me esfuerzo cada día por aprender más sobre
+                    programación, tecnología y desarrollo web.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FÚTBOL -->
+
+        <div class="caja">
+
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018">
+
+            <div class="contenido">
+
+                <h2>Fútbol</h2>
+
+                <p>
+
+                    Me gusta mucho el fútbol porque es un deporte
+                    que ayuda a mantener la disciplina, el trabajo
+                    en equipo y la salud física.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MÚSICA -->
+
+        <div class="caja">
+
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+
+            <div class="contenido">
+
+                <h2>Música</h2>
+
+                <p>
+
+                    Disfruto escuchar música en mis tiempos libres
+                    porque me ayuda a relajarme y motivarme
+                    en mis actividades diarias.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- TECNOLOGÍA -->
+
+        <div class="caja">
+
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+
+            <div class="contenido">
+
+                <h2>Tecnología</h2>
+
+                <p>
+
+                    Me apasiona la tecnología y el aprendizaje
+                    sobre computadoras, programación y desarrollo
+                    de aplicaciones modernas.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ACTIVIDADES -->
+
+        <div class="caja">
+
+            <img src="https://images.unsplash.com/photo-1517164850305-99a3e65bb47e">
+
+            <div class="contenido">
+
+                <h2>Actividades Lúdicas</h2>
+
+                <p>
+
+                    Me gusta participar en actividades recreativas
+                    y compartir momentos agradables con otras personas.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUEÑOS -->
+
+        <div class="caja">
+
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+
+            <div class="contenido">
+
+                <h2>Metas y Sueños</h2>
+
+                <p>
+
+                    Tengo muchos sueños y aspiraciones para mi futuro.
+                    Quiero salir adelante y lograr grandes cosas
+                    a nivel personal y profesional.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
